@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body style="background-color: azure;">
+    <div class="account-page">
+        <div class="container">
+            <div class="row">               
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span>Login</span>                          
+                        </div>
+                        <form id="loginForm" action="login.php" method="post">
+                            <input id="e-mail" type="email" placeholder="Enter your E-mail">
+                            <input type=" password" placeholder="Password">
+                            <button  type="submit" class="btn" onclick="myfunction()">Submit</button>
+                            <a href=""> forgot password</a> <br><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+    let x=document.getElementById("name").value;
+    let y=document.getElementById("e-mail").value;
+    if(!isNaN(x)| !isNaN(y)){
+        alert("enter everything");
+    }else{
+        alert("this is already")
+    }
+</script>
+
+</body>
+</html>
